@@ -3,7 +3,7 @@ the archive with Teradata tools and utilities.
 
 You can find this image in Docker Hub and use it as a parent image: 
 
-FROM katorig/python36teradatautilities:teradatautils`
+`FROM katorig/python36teradatautilities:teradatautils`
 
 To build this image locally:
 `docker build -t python36teradatautilities:main --network=host --build-arg proxy="" .` (insert proxy host and port)
