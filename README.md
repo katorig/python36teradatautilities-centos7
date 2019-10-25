@@ -2,11 +2,13 @@ This Docker image is based on CentOS 7 and includes Python 3.6 installed and
 the archive with Teradata tools and utilities. 
 
 You can find this image in Docker Hub and use it as a parent image: 
-`FROM katorig/python36teradatautilities:teradatautils`
+
+FROM katorig/python36teradatautilities:teradatautils`
 
 To build this image locally:
 `docker build -t python36teradatautilities:main --network=host --build-arg proxy="" .` (insert proxy host and port)
 
+**Note**: the archive folder with utilities is not in GitHub repository 
 
 List of Teradata utilities, choose the necessary one and print the number of it in shell command inside the container 
 for installation `/bin/bash /tmp/TeradataToolsAndUtilitiesBase/.setup.sh {}` where {} is a place for number of utility:
