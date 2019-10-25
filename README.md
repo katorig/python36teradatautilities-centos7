@@ -8,7 +8,7 @@ You can find this image in Docker Hub and use it as a parent image:
 To build this image locally:
 `docker build -t python36teradatautilities:main --network=host --build-arg proxy="" .` (insert proxy host and port)
 
-**Note**: the archive folder with utilities is not in GitHub repository 
+**Note**: tar-archive with TeradataToolsAndUtilitiesBase is not represented in GitHub repository because of its large size. You can download it from official Teradata website: https://downloads.teradata.com/download/tools/teradata-tools-and-utilities-linux-installation-package-0
 
 List of Teradata utilities, choose the necessary one and print the number of it in shell command inside the container 
 for installation `/bin/bash /tmp/TeradataToolsAndUtilitiesBase/.setup.sh {}` where {} is a place for number of utility:
